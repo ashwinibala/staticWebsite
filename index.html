@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1 - ASHWINI BALA GANESUN | 8878279</title>
+    <script async src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div>
+      <img
+        src="./pictures/kiosk_logo.jpg"
+        height="120px"
+        weight="80px"
+        alt="kiosk logo"
+      />
+      <br />
+      <center>
+        <strong class="products"> Products </strong>
+      </center>
+    </div>
+    <center>
+      <table title="Gift Items" class="table">
+        <tbody>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td colspan="2">
+                    <img
+                      src="./pictures/backpack.jpg"
+                      height="300px"
+                      width="200px"
+                      alt="Backpack"
+                    />
+                  </td>
+                </tr>
+                <tr class="product-name">
+                  <td>Backpack</td>
+                  <td>$25</td>
+                </tr>
+                <tr class="quantity">
+                  <td>Quantity</td>
+                  <td id="backPack">0</td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <button
+                      class="add-button button1"
+                      onclick="backPackQuantity()"
+                    >
+                      Add
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td colspan="2">
+                    <img
+                      src="./pictures/waterbottle.jpg"
+                      height="300px"
+                      width="200px"
+                      alt="Water bottle"
+                    />
+                  </td>
+                </tr>
+                <tr class="product-name">
+                  <td>Water Bottle</td>
+                  <td>$15</td>
+                </tr>
+                <tr class="quantity">
+                  <td>Quantity</td>
+                  <td id="waterBottle">0</td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <button
+                      class="add-button button1"
+                      onclick="waterBottleQuantity()"
+                    >
+                      Add
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td colspan="2">
+                    <img
+                      src="./pictures/keychain.jpg"
+                      height="300px"
+                      width="200px"
+                      alt="Key chain"
+                    />
+                  </td>
+                </tr>
+                <tr class="product-name">
+                  <td>Key Chain</td>
+                  <td>$5</td>
+                </tr>
+                <tr class="quantity">
+                  <td>Quantity</td>
+                  <td id="keyChain">0</td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <button
+                      class="add-button button1"
+                      onclick="keyChainQuantity()"
+                    >
+                      Add
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td colspan="2">
+                    <img
+                      src="./pictures/coffee_cup.jpg"
+                      height="300px"
+                      width="200px"
+                      alt="Coffee Cup"
+                    />
+                  </td>
+                </tr>
+                <tr class="product-name">
+                  <td>Coffee Cup</td>
+                  <td>$10</td>
+                </tr>
+                <tr class="quantity">
+                  <td>Quantity</td>
+                  <td id="coffeeCup">0</td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <button
+                      class="add-button button1"
+                      onclick="coffeeCupQuantity()"
+                    >
+                      Add
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td colspan="2">
+                    <img
+                      src="./pictures/notebook.jpg"
+                      height="300px"
+                      width="200px"
+                      alt="Notebook"
+                    />
+                  </td>
+                </tr>
+                <tr class="product-name">
+                  <td>Notebook</td>
+                  <td>$15</td>
+                </tr>
+                <tr class="quantity">
+                  <td>Quantity</td>
+                  <td id="noteBook">0</td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <button
+                      class="add-button button1"
+                      onclick="noteBookQuantity()"
+                    >
+                      Add
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td colspan="2">
+                    <img
+                      src="./pictures/pen.jpg"
+                      height="300px"
+                      width="200px"
+                      alt="Pen"
+                    />
+                  </td>
+                </tr>
+                <tr class="product-name">
+                  <td>Pen</td>
+                  <td>$10</td>
+                </tr>
+                <tr class="quantity">
+                  <td>Quantity</td>
+                  <td id="pen">0</td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <button class="add-button button1" onclick="penQuantity()">
+                      Add
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td colspan="2">
+                    <img
+                      src="./pictures/gift_box.jpg"
+                      height="300px"
+                      width="200px"
+                      alt="Gift Box"
+                    />
+                  </td>
+                </tr>
+                <tr class="product-name">
+                  <td>Surprise Giftbox</td>
+                  <td>$25</td>
+                </tr>
+                <tr class="quantity">
+                  <td>Quantity</td>
+                  <td id="giftBox">0</td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <button
+                      class="add-button button1"
+                      onclick="giftBoxQuantity()"
+                    >
+                      Add
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td colspan="2">
+                    <img
+                      src="./pictures/giftcard.jpg"
+                      height="300px"
+                      width="200px"
+                      alt="Gift card"
+                    />
+                  </td>
+                </tr>
+                <tr class="product-name">
+                  <td>Gift Card</td>
+                  <td>$20</td>
+                </tr>
+                <tr class="quantity">
+                  <td>Quantity</td>
+                  <td id="giftCard">0</td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <button
+                      class="add-button button1"
+                      onclick="giftCardQuantity()"
+                    >
+                      Add
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="checkout-button button1" onclick="doCheckout()">
+        Checkout
+      </button>
+      <br />
+      <div>
+        <p id="checkout"></p>
+      </div>
+      <p>&copy; 2023 The Kiosk Shop</p>
+    </center>
+  </body>
+</html>
